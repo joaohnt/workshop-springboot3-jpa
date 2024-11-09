@@ -1,7 +1,7 @@
 package com.joaozera.course.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import org.springframework.boot.autoconfigure.batch.BatchTransactionManager;
 
 import java.io.Serializable;
 import java.util.HashSet;
@@ -18,7 +18,8 @@ public class Category implements Serializable {
     private Long id;
     private String name;
 
-    @Transient
+    @JsonIgnore
+    @ManyToMany(mappedBy = "categories")
     private Set<Product> products = new HashSet<>(); // nao sei pq ta sublinhado vermelho esta porra
 
     public Category() {}
