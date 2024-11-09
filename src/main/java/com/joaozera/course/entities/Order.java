@@ -1,6 +1,5 @@
 package com.joaozera.course.entities;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.joaozera.course.entities.enums.OrderStatus;
 import jakarta.persistence.*;
 
