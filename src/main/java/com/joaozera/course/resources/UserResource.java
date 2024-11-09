@@ -47,5 +47,5 @@ public class UserResource {
         obj.setId(id, obj);
         return ResponseEntity.ok().body(obj);
     }
-    
+
 }
