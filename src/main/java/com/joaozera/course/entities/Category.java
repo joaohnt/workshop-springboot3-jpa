@@ -20,8 +20,7 @@ public class Category implements Serializable {
 
     @JsonIgnore
     @ManyToMany(mappedBy = "categories")
-    private Set<Product> products = new HashSet<>(); // nao sei pq ta sublinhado vermelho esta porra
-
+    private Set<Product> products = new HashSet<>();
     public Category() {}
 
     public Category(Long id, String name) {
