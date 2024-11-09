@@ -1,7 +1,7 @@
 package com.joaozera.course.entities;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.joaozera.course.entities.pk.OrderItemPK;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
@@ -12,6 +12,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "tb_order_item")
+@JsonPropertyOrder({"quantity", "price", "subTotal", "product"})
 public class OrderItem implements Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -63,6 +64,10 @@ public class OrderItem implements Serializable {
 
     public void setQuantity(Integer quantity) {
         this.quantity = quantity;
+    }
+
+    public Double getSubTotal() {
+        return price * quantity;
     }
 
     @Override
