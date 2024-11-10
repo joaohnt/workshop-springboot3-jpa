@@ -18,8 +18,6 @@ Foi desenvolvido como parte do curso de Java da DevSuperior na Udemy e pode ser 
 - Postman
 
 # Como executar o projeto
-
-## Back end
 Pré-requisitos: JDK 17 ou superior e Maven
 
 ```bash
