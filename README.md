@@ -5,7 +5,7 @@
 
 Este projeto é uma API RESTful desenvolvida com Spring Boot para gerenciar dados de usuários, oferecendo operações CRUD (Criar, Ler, Atualizar, Excluir). Ele utiliza JPA para persistência de dados e um banco de dados em memória H2 para desenvolvimento. Também implementa tratamento de exceções personalizadas para retornar mensagens claras de erro quando recursos não são encontrados ou há violação de restrições do banco de dados.
 
-Foi desenvolvido como parte do curso de Java da DevSuperior na Udemy e pode ser testado facilmente com o Postman ou outras ferramentas de teste de API..
+Foi desenvolvido como parte do curso de Java da DevSuperior na Udemy e pode ser testado facilmente com o Postman ou outras ferramentas de teste de API.
 
 ## Modelo conceitual
 ![Modelo Conceitual](https://github.com/user-attachments/assets/cae98a92-7003-47f3-abf4-6758a78d9336)
