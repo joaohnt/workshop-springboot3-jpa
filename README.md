@@ -3,7 +3,7 @@
 
 # Sobre o projeto
 
-Este projeto é uma API RESTful desenvolvida com Spring Boot para gerenciar dados de usuários, oferecendo operações CRUD (Criar, Ler, Atualizar, Excluir). Ele utiliza JPA para persistência de dados e um banco de dados em memória H2 para desenvolvimento. Também implementa tratamento de exceções personalizadas para retornar mensagens claras de erro quando recursos não são encontrados ou há violação de restrições do banco de dados.
+Este projeto é uma API RESTful desenvolvida com Spring Boot para gerenciar dados de usuários, oferecendo operações CRUD. Ele utiliza JPA para persistência de dados e um banco de dados em memória H2 para desenvolvimento. Também implementa tratamento de exceções personalizadas para retornar mensagens claras de erro quando recursos não são encontrados ou há violação de restrições do banco de dados.
 
 Foi desenvolvido como parte do curso de Java da DevSuperior na Udemy e pode ser testado facilmente com o Postman ou outras ferramentas de teste de API.
 
@@ -24,13 +24,13 @@ Pré-requisitos: JDK 17 ou superior e Maven
 #Clone o repositório:
 git clone https://github.com/joaohnt/workshop-springboot3-jpa.git
 
-#Instale as dependências: No diretório raiz do projeto, execute o seguinte comando para baixar as dependências:
+#Instale as dependências:
 mvn clean install
 
-#Execute a aplicação: Inicie o servidor Spring Boot usando o Maven:
+#Inicie o servidor Spring Boot usando o Maven:
 mvn spring-boot:run
 ```
-Acesse a aplicação: O servidor estará rodando em http://localhost:8080. Você pode usar ferramentas como Postman para testar os endpoints.
+O servidor estará rodando em http://localhost:8080. Você pode usar ferramentas como Postman para testar os endpoints.
 Para testar todas as funções da API, você pode fazer requisições CRUD para a entidade /users
 
 Para listar usuários: GET /users
