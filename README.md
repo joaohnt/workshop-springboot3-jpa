@@ -17,21 +17,7 @@ Foi desenvolvido como parte do curso de Java da DevSuperior na Udemy e pode ser 
 - Maven
 - Postman
 
-# Como executar o projeto
-Pré-requisitos: JDK 17 ou superior e Maven
-
-```bash
-#Clone o repositório:
-git clone https://github.com/joaohnt/workshop-springboot3-jpa.git
-
-#Instale as dependências:
-mvn clean install
-
-#Inicie o servidor Spring Boot usando o Maven:
-mvn spring-boot:run
-```
-O servidor estará rodando em http://localhost:8080. Você pode usar ferramentas como Postman para testar os endpoints.
-Para testar todas as funções da API, você pode fazer requisições CRUD para a entidade /users
+# Endpoints
 
 Para listar usuários: GET /users
 
@@ -43,7 +29,7 @@ Para atualizar um usuário: PUT /users/{id}
 
 Para excluir um usuário: DELETE /users/{id}
 
-Você também pode listar todos os itens ou buscar por ID nas entidades: produtos (/products), pedidos (/orders) e categorias (/categories).
+- Você também pode listar todos os itens ou buscar por ID nas entidades: produtos (/products), pedidos (/orders) e categorias (/categories).
 
 
 # João Pedro Carvalho Garcia
